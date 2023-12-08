@@ -30,10 +30,12 @@ namespace Tyuiu.GalyameevMR.Sprint6.Task2.V30
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormMain));
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea5 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend5 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series5 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.DataGridView_GMR = new System.Windows.Forms.DataGridView();
+            this.Column_GMR = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ColumnTwo_GMR = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.textBoxCond_GMR = new System.Windows.Forms.TextBox();
             this.pictureBox_GMR = new System.Windows.Forms.PictureBox();
             this.buttonRes_GMR = new System.Windows.Forms.Button();
@@ -43,8 +45,6 @@ namespace Tyuiu.GalyameevMR.Sprint6.Task2.V30
             this.labelStop_GMR = new System.Windows.Forms.Label();
             this.chartFunc_GMR = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.buttonHelp_GMR = new System.Windows.Forms.Button();
-            this.Column_GMR = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ColumnTwo_GMR = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.DataGridView_GMR)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_GMR)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.chartFunc_GMR)).BeginInit();
@@ -65,6 +65,22 @@ namespace Tyuiu.GalyameevMR.Sprint6.Task2.V30
             this.DataGridView_GMR.Size = new System.Drawing.Size(98, 271);
             this.DataGridView_GMR.TabIndex = 0;
             this.DataGridView_GMR.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DataGridView_CellContentClick);
+            // 
+            // Column_GMR
+            // 
+            this.Column_GMR.HeaderText = "X";
+            this.Column_GMR.Name = "Column_GMR";
+            this.Column_GMR.ReadOnly = true;
+            this.Column_GMR.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Programmatic;
+            this.Column_GMR.ToolTipText = "5";
+            this.Column_GMR.Width = 50;
+            // 
+            // ColumnTwo_GMR
+            // 
+            this.ColumnTwo_GMR.HeaderText = "F(X)";
+            this.ColumnTwo_GMR.Name = "ColumnTwo_GMR";
+            this.ColumnTwo_GMR.ReadOnly = true;
+            this.ColumnTwo_GMR.Width = 50;
             // 
             // textBoxCond_GMR
             // 
@@ -137,17 +153,17 @@ namespace Tyuiu.GalyameevMR.Sprint6.Task2.V30
             // 
             // chartFunc_GMR
             // 
-            chartArea5.Name = "ChartArea1";
-            this.chartFunc_GMR.ChartAreas.Add(chartArea5);
-            legend5.Name = "Legend1";
-            this.chartFunc_GMR.Legends.Add(legend5);
+            chartArea1.Name = "ChartArea1";
+            this.chartFunc_GMR.ChartAreas.Add(chartArea1);
+            legend1.Name = "Legend1";
+            this.chartFunc_GMR.Legends.Add(legend1);
             this.chartFunc_GMR.Location = new System.Drawing.Point(591, 12);
             this.chartFunc_GMR.Name = "chartFunc_GMR";
-            series5.ChartArea = "ChartArea1";
-            series5.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
-            series5.Legend = "Legend1";
-            series5.Name = "F(X)";
-            this.chartFunc_GMR.Series.Add(series5);
+            series1.ChartArea = "ChartArea1";
+            series1.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
+            series1.Legend = "Legend1";
+            series1.Name = "F(X)";
+            this.chartFunc_GMR.Series.Add(series1);
             this.chartFunc_GMR.Size = new System.Drawing.Size(444, 285);
             this.chartFunc_GMR.TabIndex = 9;
             this.chartFunc_GMR.Text = "chart1";
@@ -162,20 +178,6 @@ namespace Tyuiu.GalyameevMR.Sprint6.Task2.V30
             this.buttonHelp_GMR.Text = "?";
             this.buttonHelp_GMR.UseVisualStyleBackColor = false;
             this.buttonHelp_GMR.Click += new System.EventHandler(this.buttonHelp_GMR_Click);
-            // 
-            // Column_GMR
-            // 
-            this.Column_GMR.HeaderText = "X";
-            this.Column_GMR.Name = "Column_GMR";
-            this.Column_GMR.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Programmatic;
-            this.Column_GMR.ToolTipText = "5";
-            this.Column_GMR.Width = 50;
-            // 
-            // ColumnTwo_GMR
-            // 
-            this.ColumnTwo_GMR.HeaderText = "F(X)";
-            this.ColumnTwo_GMR.Name = "ColumnTwo_GMR";
-            this.ColumnTwo_GMR.Width = 50;
             // 
             // FormMain
             // 
@@ -193,7 +195,7 @@ namespace Tyuiu.GalyameevMR.Sprint6.Task2.V30
             this.Controls.Add(this.textBoxCond_GMR);
             this.Controls.Add(this.DataGridView_GMR);
             this.Name = "FormMain";
-            this.Text = "Form1";
+            this.Text = "Спринт 6 | Таск 2 | V30 | Галямеев М.Р.";
             ((System.ComponentModel.ISupportInitialize)(this.DataGridView_GMR)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_GMR)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.chartFunc_GMR)).EndInit();
