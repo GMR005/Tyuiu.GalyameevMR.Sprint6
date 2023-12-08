@@ -30,9 +30,9 @@ namespace Tyuiu.GalyameevMR.Sprint6.Task2.V30
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormMain));
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea4 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend4 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series4 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea5 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend5 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series5 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.DataGridView_GMR = new System.Windows.Forms.DataGridView();
             this.textBoxCond_GMR = new System.Windows.Forms.TextBox();
             this.pictureBox_GMR = new System.Windows.Forms.PictureBox();
@@ -61,7 +61,8 @@ namespace Tyuiu.GalyameevMR.Sprint6.Task2.V30
             this.DataGridView_GMR.Location = new System.Drawing.Point(411, 12);
             this.DataGridView_GMR.Name = "DataGridView_GMR";
             this.DataGridView_GMR.ReadOnly = true;
-            this.DataGridView_GMR.Size = new System.Drawing.Size(142, 271);
+            this.DataGridView_GMR.RowHeadersVisible = false;
+            this.DataGridView_GMR.Size = new System.Drawing.Size(98, 271);
             this.DataGridView_GMR.TabIndex = 0;
             this.DataGridView_GMR.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DataGridView_CellContentClick);
             // 
@@ -136,17 +137,17 @@ namespace Tyuiu.GalyameevMR.Sprint6.Task2.V30
             // 
             // chartFunc_GMR
             // 
-            chartArea4.Name = "ChartArea1";
-            this.chartFunc_GMR.ChartAreas.Add(chartArea4);
-            legend4.Name = "Legend1";
-            this.chartFunc_GMR.Legends.Add(legend4);
+            chartArea5.Name = "ChartArea1";
+            this.chartFunc_GMR.ChartAreas.Add(chartArea5);
+            legend5.Name = "Legend1";
+            this.chartFunc_GMR.Legends.Add(legend5);
             this.chartFunc_GMR.Location = new System.Drawing.Point(591, 12);
             this.chartFunc_GMR.Name = "chartFunc_GMR";
-            series4.ChartArea = "ChartArea1";
-            series4.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
-            series4.Legend = "Legend1";
-            series4.Name = "F(X)";
-            this.chartFunc_GMR.Series.Add(series4);
+            series5.ChartArea = "ChartArea1";
+            series5.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
+            series5.Legend = "Legend1";
+            series5.Name = "F(X)";
+            this.chartFunc_GMR.Series.Add(series5);
             this.chartFunc_GMR.Size = new System.Drawing.Size(444, 285);
             this.chartFunc_GMR.TabIndex = 9;
             this.chartFunc_GMR.Text = "chart1";
