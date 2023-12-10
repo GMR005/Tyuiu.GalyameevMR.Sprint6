@@ -100,7 +100,7 @@ namespace Tyuiu.GalyameevMR.Sprint6.Task6.V28
             this.buttonDone_GMR.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.buttonDone_GMR.Location = new System.Drawing.Point(220, 3);
             this.buttonDone_GMR.Name = "buttonDone_GMR";
-            this.buttonDone_GMR.Size = new System.Drawing.Size(154, 60);
+            this.buttonDone_GMR.Size = new System.Drawing.Size(163, 60);
             this.buttonDone_GMR.TabIndex = 4;
             this.buttonDone_GMR.Text = "Вывести";
             this.buttonDone_GMR.UseVisualStyleBackColor = true;
