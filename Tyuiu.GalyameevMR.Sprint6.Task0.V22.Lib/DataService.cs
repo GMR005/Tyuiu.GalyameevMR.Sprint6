@@ -12,7 +12,7 @@ namespace Tyuiu.GalyameevMR.Sprint6.Task0.V22.Lib
         public double Calculate(int x)
         {
            double y = 0.7*Math.Pow(x,3) + 1.52*Math.Pow(x,2);
-            y = Math.Round(y, 2);
+            y = Math.Round(y, 2); 
             return y;
 
         }

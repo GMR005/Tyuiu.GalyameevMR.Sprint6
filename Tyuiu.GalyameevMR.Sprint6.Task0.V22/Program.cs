@@ -12,7 +12,7 @@ namespace Tyuiu.GalyameevMR.Sprint6.Task0.V22
         /// The main entry point for the application.
         /// </summary>
         [STAThread]
-        static void Main()
+        static void Main() 
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
